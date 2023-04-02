@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+  go:
+    build:
+      context: .
+    volumes:
+      - .:/work
+    working_dir: /work
+    environment:
+      - BUILDKITE_TAG
+      - GPG_SECRET_KEY_BASE64
+      - GITHUB_TOKEN  
+      - BUILDKITE_ORGANIZATION
+      - BUILDKITE_API_TOKEN
+      - BUILDKITE_ARTIFACTORY_URL
+      - BUILDKITE_ARTIFACTORY_USER
+      - BUILDKITE_ARTIFACTORY_PASSWORD
