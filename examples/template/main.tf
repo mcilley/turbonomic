@@ -33,12 +33,12 @@ provider "turbonomic" {
 // -----------------------------------------------------------------------------
 
 data "turbonomic_template" "example" {
-  display_name   = "MAX:VMs_MA2\\c05.esx.ma2"
+  display_name   = "foo"
   vcenter_server = "vcenter.host.foo.foo.com"
 }
 
 data "turbonomic_deployment_profile" "example" {
-  display_name = "DEP-PCKR20181023141134_CENTOS751804_BO1_4.0"
+  display_name = "DEP-PCKR20181023141134_CENTOS751804_foo_4.0"
 }
 
 /*
